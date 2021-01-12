@@ -13,8 +13,8 @@ test_requirements = ['pipenv', 'twine', 'pytest-cov', 'pytest', 'responses', 'wh
 setup_requirements = ['pipenv', 'setuptools']
 
 setup(
-    author='Petter Kraabøl',
-    author_email='petter.zarlach@gmail.com',
+    author='Pillar',
+    author_email='opensource@pillar.gg',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
@@ -30,13 +30,13 @@ setup(
     long_description_content_type='text/markdown',
     include_package_data=True,
     keywords='Twitch API',
-    name='twitch-python',
+    name='pillar-twitch-python',
     packages=find_packages(),
     python_requires=">=3.7",
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/PetterKraabol/Twitch-Python',
-    version='0.0.19',
+    url='https://github.com/pillargg/Twitch-Python',
+    version='0.0.20',
     zip_safe=True,
 )
