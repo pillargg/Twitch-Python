@@ -24,5 +24,7 @@ jobs:
         TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
         TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
       run: |
+        echo "TWINE_USERNAME=${{ secrets.PYPI_USERNAME }}" > .env
+        echo "TWINE_PASSWORD=${{ secrets.PYPI_PASSWORD }}" >> .env
         pipenv run python setup.py sdist bdist_wheel
-        pipenv run TWINE_USERNAME=$TWINE_USERNAME TWINE_PASSWORD=$TWINE_PASSWORD twine upload dist/*
+        pipenv run twine upload dist/*
