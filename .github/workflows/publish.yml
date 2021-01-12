@@ -1,6 +1,8 @@
 name: Python package
 
-on: [push]
+on: 
+  release:
+    types: [created]
 
 jobs:
   build:
@@ -22,4 +24,5 @@ jobs:
         TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
         TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
       run: |
-        sh ./publish.sh
+        pipenv run python setup.py sdist bdist_wheel
+        pipenv run TWINE_USERNAME=$TWINE_USERNAME TWINE_PASSWORD=$TWINE_PASSWORD twine upload dist/*
