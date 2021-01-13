@@ -1,7 +1,7 @@
 # Pillar Twitch Python
 
-[![Discord](https://user-images.githubusercontent.com/7288322/34471967-1df7808a-efbb-11e7-9088-ed0b04151291.png)](https://discord.gg/wZJFeXC)
-[![Build Status](https://api.travis-ci.org/PetterKraabol/Twitch-Python.svg?branch=master)](https://travis-ci.org/PetterKraabol/Twitch-Python)
+![Python Tests](https://github.com/pillargg/Twitch-Python/workflows/Python%20Tests/badge.svg?branch=master)
+![Build Status](https://github.com/pillargg/Twitch-Python/workflows/Python%20package/badge.svg)
 
 
 `pip install --user pillar-twitch-python`
